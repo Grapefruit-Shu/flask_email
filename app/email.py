@@ -10,7 +10,7 @@ from . import mail
 
 
 def send_async_mail(app, msg):
-    '''创建邮件发送函数'''
+    """创建邮件发送函数"""
     with app.app_context():
         mail.send(msg)
 
